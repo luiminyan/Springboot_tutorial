@@ -8,7 +8,13 @@
  The information from "post" request will be proofed by the server to make sure no duplicated student information will be recorded in the database.<br>
  ### Post request<br>
  Store a student data twice: first time success and seconde time expected error reported (id duplication check).<br>
- <img src="images/post-request.gif" alt="postreq"><br>
+ <img src="images/post-request.gif" alt="post-req-gif"><br>
+ ### Delete request<br>
+ Delete the student data item by id. If data not existing, report error.<br>
+ <img src="" alt="delete-request-gif">
+
+ ### Update request<br>
+ To be finished<br>
 
  ## 02: Service layer<br>
  To provide functions in the API layer and isolate them out of security reasons. <br>
