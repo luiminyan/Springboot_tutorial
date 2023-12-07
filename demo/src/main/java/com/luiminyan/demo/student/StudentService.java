@@ -1,5 +1,6 @@
 package com.luiminyan.demo.student;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -10,16 +11,16 @@ import java.util.List;
 // @Service: make it a Service class, semantically better
 @Service
 public class StudentService {
-//    Service functions
+    private final StudentRepository studentRepository;
+
+    @Autowired
+    public StudentService(StudentRepository studentRepository) {
+        this.studentRepository = studentRepository;
+    }
+
+    //    Service functions
     public List<Student> getStudent(){
-        return List.of(
-                new Student(
-                        1L,
-                        "Mariam",
-                        "mariam@gmail.com",
-                        LocalDate.of(2000, Month.JANUARY, 5),
-                        21
-                )
-        );
+//        return a list
+        return studentRepository.findAll();
     }
 }
