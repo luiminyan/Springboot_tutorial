@@ -23,4 +23,8 @@ public class StudentService {
 //        return a list
         return studentRepository.findAll();
     }
+
+    public void addNewStudent(Student student) {
+        System.out.println(student);
+    }
 }
