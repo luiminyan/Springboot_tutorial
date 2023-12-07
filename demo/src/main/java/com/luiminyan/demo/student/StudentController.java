@@ -31,6 +31,7 @@ public class StudentController {
     public void registerNewStudent(@RequestBody Student student){
 //        take from request body
         studentService.addNewStudent(student);
+        System.out.println(student);
     }
 
 //    add delete function
