@@ -32,4 +32,12 @@ public class StudentController {
 //        take from request body
         studentService.addNewStudent(student);
     }
+
+//    add delete function
+    @DeleteMapping(path = "{studentId}")
+    public void deleteStudent(@PathVariable Long studentId) {
+        studentService.deleteStudent(studentId);
+    }
+
+//    TODO: add update function
 }
