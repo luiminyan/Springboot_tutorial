@@ -11,7 +11,7 @@
  <img src="images/post-request.gif" alt="post-req-gif"><br>
  ### Delete request<br>
  Delete the student data item by id. If data not existing, report error.<br>
- <img src="" alt="delete-request-gif">
+ <img src="images/delete-req.gif" alt="delete-request-gif">
 
  ### Update request<br>
  To be finished<br>
