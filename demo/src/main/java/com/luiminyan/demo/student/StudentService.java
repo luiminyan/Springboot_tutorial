@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
+import java.util.Optional;
 
 // @Component: to make StudentService class a java bean
 // @Service: make it a Service class, semantically better
@@ -25,6 +26,12 @@ public class StudentService {
     }
 
     public void addNewStudent(Student student) {
-        System.out.println(student);
+//        check if email exist, if not throw exception
+        Optional<Student> studentByEmail = studentRepository.findStudentByEmail(student.getEmail());
+        if (studentByEmail.isPresent()) {
+            throw new IllegalStateException("Email taken");
+        }
+//        if is not present: save student
+        studentRepository.save(student);
     }
 }
