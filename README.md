@@ -25,4 +25,4 @@
  ## 04: Database <br>
  The PostgreSql is used here to store the student data.<br>
  
- <image src="https://github.com/luiminyan/Springboot_tutorial/blob/main/images/layers.png" height="400"><br>
+ <image src="https://github.com/luiminyan/Springboot_tutorial/blob/main/images/springboot_structure.drawio.png" height="400"><br>
