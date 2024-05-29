@@ -1,6 +1,8 @@
 # Springboot_tutorial
  Followed the introductory tutorial by @amigoscode<br>
 
+ <image src="https://github.com/luiminyan/Springboot_tutorial/blob/main/images/springboot_structure.drawio.png" height="400"><br>
+
  A simple student information management system in RESTful architecture written in Java. The Springboot framework is used in this project. The application is divided into 4 layers: the API layer, the service layer, data access layer and the database.<br>
 
  ## 01: API layer<br>
@@ -25,4 +27,3 @@
  ## 04: Database <br>
  The PostgreSql is used here to store the student data.<br>
  
- <image src="https://github.com/luiminyan/Springboot_tutorial/blob/main/images/springboot_structure.drawio.png" height="400"><br>
